@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #292f36;
+  --gray: #4d5053;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* .container {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+} */
+
+body {
+  max-width: 192rem;
+  margin: auto;
+  color: var(--dark);
+  font-family: "Jost", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 7rem;
+  line-height: 1.2;
+  font-family: "DM Serif Display", serif;
+}
+
+/* header{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-left: 300px;
+}
+
+header img{
+    margin-left: 220px;
+}
+li img{
+    margin-left: 0;
+    width: 20px;
+} */
+
+a {
+  color: var(--dark);
+  font-weight: 400;
+}
+
+a.active {
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.center {
+  margin-top: 5.4rem;
+  margin-bottom: 6.6rem;
+}
+
+header > div:last-child {
+  display: flex;
+  gap: 3.1rem;
+}
+
+header img {
+  display: block;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;
+}
+
+header li a {
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    display: none;
+  }
+
+  
+}
+
+.center {
+  max-width: 121rem;
+  margin: auto;
+  padding-inline: 2rem;
+  box-sizing: content-box;
+}
+
+.hero {
+  background: url("./img/hands.png") center;
+  height: 35.6rem;
+  position: relative;
+  margin-bottom: 8.9rem;
+}
+
+.hero h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  justify-content: center;
+
+  max-width: 121rem;
+}
+
+.card {
+  width: 28.4rem;
+  flex-shrink: 0;
+}
+
+.card__top img {
+  width: 100%;
+}
+
+.card__bottom {
+  text-align: center;
+}
+
+.card__bottom p:first-child {
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 0.2rem;
+}
+
+.card__bottom p:nth-child(2) {
+  font-family: "DM Serif Display", serif;
+  color: var(--gray);
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1.7rem;
+}
+
+.card__bottom > div:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 895px) {
+  .card {
+    flex-grow: 1;
+  }
+}
+
+/* .Team h1 {
+  color: white;
+  font-family: serif;
+  font-size: 70px;
+  font-weight: 400px;
+  line-height: 88px;
+  text-align: center;
+  margin-top: -10.5%;
+} */
+.information {
+  display: flex;
+  max-width: 1170px;
+  margin: 130px auto;
+  gap: 15px;
+}
+.Pages > h3 {
+  margin: 0 0 0 130px;
+}
+.Pages > p {
+  margin-top: 30px;
+  margin-left: 130px;
+  display: flex;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.Services > h3 {
+  margin: 0 0 0 130px;
+}
+.Services > p {
+  margin-top: 30px;
+  margin-left: 130px;
+  display: flex;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.Contact > h3 {
+  margin: 0 0 0 130px;
+}
+.Contact > p {
+  margin-top: 30px;
+  margin-left: 130px;
+  display: flex;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.c {
+  margin: 200px 0 50px 0;
+}
+
+.footer1 {
+  margin: auto;
+  margin-top: 20rem;
+  /* border: dashed; */
+  width: min(100%, 1210px);
+  /* height: 370px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 96px;
+}
+
+.SELHONO {
+  width: 393px;
+  height: 188px;
+}
+
+
+
+.SELHONO p {
+  margin-top: 30px;
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 1%;
+}
+
+
+.icons {
+  margin-top: 40px;
+  width: 225px;
+  height: 23px;
+  display: flex;
+  gap: 60px;
+}
+
+.footericon {
+  width: 17px;
+  height: 23px;
+}
+
+.pages {
+  width: 125px;
+  column-gap: 9px;
+}
+
+h3 {
+  font-family: DM Serif Display;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31.25px;
+}
+
+.pages > ul li {
+  font-size: 22px;
+  line-height: 66px;
+  font-weight: 400;
+  letter-spacing: 1%;
+  font-family: Jost;
+  font: Jost;
+  list-style: none;
+}
+
+.services {
+  width: 140px;
+  column-gap: 9px;
+}
+
+.services > ul li {
+  font-size: 22px;
+  line-height: 66px;
+  font-weight: 400;
+  letter-spacing: 1%;
+  font-family: Jost;
+  font: Jost;
+  list-style: none;
+}
+
+.contact {
+  width: 258px;
+}
+
+.contact p {
+  margin-top: 26px;
+}
+
+.footer2 {
+  margin: auto;
+  margin-top: 120px;
+  width: max-content;
+
+  
+}
+
+
+@media screen and(max-width: 612px) {
+  
+}
+
+
+
+
